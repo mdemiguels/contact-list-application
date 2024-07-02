@@ -5,3 +5,5 @@ create table if not exists Contact (
     email varchar(70),
     phone varchar(9)
 );
+
+CREATE SEQUENCE CONTACT_SEQ START WITH 5 INCREMENT BY 1;

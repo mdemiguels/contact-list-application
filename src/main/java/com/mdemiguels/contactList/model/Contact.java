@@ -1,13 +1,12 @@
 package com.mdemiguels.contactList.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -16,7 +15,8 @@ import java.io.Serializable;
 public class Contact implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "contact_seq_generator")
+    @SequenceGenerator(name="contact_seq_generator", sequenceName = "CONTACT_SEQ", allocationSize=1)
     private Long id;
 
     @NotNull
