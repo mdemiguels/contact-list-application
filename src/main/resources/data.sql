@@ -1,7 +1,4 @@
-delete from Contact;
-
-insert into Contact (name, email, phone)
-values  ('John Doe', 'johndoe@gmail.com', '660046743'),
-        ('Jane Doe', 'janedoe@gmail.com', '660042343'),
-        ('John Smith', 'john33@outlook.com', '660046743'),
-        ('Jane Smith', 'jany@hotmail.com', '660046743');
+insert into Contact (name, email, phone) values ('John Doe', 'john.doe@example.com', '123456789');
+insert into Contact (name, email, phone) values ('Jane Doe', 'jane.doe@example.com', '987654321');
+insert into Contact (name, email, phone) values ('John Smith', 'john.smith@example.com', '555555555');
+insert into Contact (name, email, phone) values ('Jane Smith', 'jane.smith@example.com', '666666666');
