@@ -6,4 +6,4 @@ create table if not exists Contact (
     phone varchar(9)
 );
 
-CREATE SEQUENCE CONTACT_SEQ START WITH 5 INCREMENT BY 1;
+CREATE SEQUENCE if not exists CONTACT_SEQ START WITH 5 INCREMENT BY 1;
