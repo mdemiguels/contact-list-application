@@ -29,6 +29,7 @@ public class ContactListApplication extends Application {
 
 		stage.setTitle("Contact List Application");
 		stage.setScene(scene);
+		stage.setResizable(false);
 		stage.show();
 
 	}

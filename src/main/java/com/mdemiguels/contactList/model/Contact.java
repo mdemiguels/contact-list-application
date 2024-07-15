@@ -26,4 +26,8 @@ public class Contact implements Serializable {
 
     @Pattern(regexp="(^$|[0-9]{9})")
     private String phone;
+
+    public String toString() {
+        return "ID: " + id + "    -    name: '" + name + '\'' + "    -    email: '" + email + '\'' +"    -    phone: '" + phone + '\'';
+    }
 }

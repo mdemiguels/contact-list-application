@@ -62,10 +62,10 @@
                                     </GridPane.margin>
                                 </Label>
                                 <Button fx:id="BtnClear" disable="true" mnemonicParsing="false" text="Limpiar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-                                <Button fx:id="btnSave" mnemonicParsing="false" text="Guardar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                <Button fx:id="btnSave" mnemonicParsing="false" onAction="#add" text="Guardar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                                 <Button fx:id="btnUpdate" disable="true" mnemonicParsing="false" text="Actualizar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
                                 <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" text="Borrar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                <TextField fx:id="txtId" GridPane.columnIndex="1" />
+                                <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" />
                                 <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                 <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                 <TextField fx:id="txtPhone" layoutX="169.0" layoutY="146.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
@@ -76,12 +76,12 @@
                                               <Font name="System Bold" size="18.0" />
                                           </font>
                                       </Label>
-                              <Label fx:id="lblWarning" alignment="CENTER" maxHeight="1.7976931348623157E308" textFill="#ebe234">
+                              <Label fx:id="lblWarning" alignment="CENTER" maxHeight="1.7976931348623157E308" textFill="#d6cf45">
                                  <opaqueInsets>
                                     <Insets />
                                  </opaqueInsets>
                                  <font>
-                                    <Font name="System Bold" size="14.0" />
+                                    <Font name="System Bold" size="18.0" />
                                  </font>
                               </Label>
                            </children>
@@ -95,7 +95,7 @@
                 </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                     <children>
-                        <ListView fx:id="listViewId" prefHeight="296.0" prefWidth="598.0" />
+                        <ListView fx:id="listView" prefHeight="296.0" prefWidth="598.0" />
                     </children>
                 </AnchorPane>
             </items>
