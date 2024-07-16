@@ -61,10 +61,10 @@
                                         <Insets />
                                     </GridPane.margin>
                                 </Label>
-                                <Button fx:id="BtnClear" disable="true" mnemonicParsing="false" text="Limpiar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                <Button fx:id="BtnClear" mnemonicParsing="false" onAction="#clear" text="Limpiar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                 <Button fx:id="btnSave" mnemonicParsing="false" onAction="#add" text="Guardar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                <Button fx:id="btnUpdate" disable="true" mnemonicParsing="false" text="Actualizar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" text="Borrar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                <Button fx:id="btnUpdate" disable="true" mnemonicParsing="false" onAction="#update" text="Actualizar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" onAction="#delete" text="Borrar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
                                 <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" />
                                 <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                 <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -95,7 +95,7 @@
                 </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                     <children>
-                        <ListView fx:id="listView" prefHeight="296.0" prefWidth="598.0" />
+                        <ListView fx:id="listView" onMouseClicked="#contactSelected" prefHeight="296.0" prefWidth="598.0" />
                     </children>
                 </AnchorPane>
             </items>
