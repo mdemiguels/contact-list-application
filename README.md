@@ -21,4 +21,20 @@ This project is a Java-based application designed to manage a contact list. It u
 - An SQL database (MySQL, PostgreSQL, etc.)
 
 ### Setup
-1. Clone the repository:
+1. Clone the repository: git clone https://github.com/mdemiguels/contact-list.git
+2. Navigate to the project directory: cd contact-list
+3. Configure your SQL database settings in `src/main/resources/application.properties`.
+
+### Running the Application
+Execute the following command to run the application:
+1. Build the project: mvn clean install
+2. Run the project: mvn spring-boot:run
+
+## API Endpoints
+The application provides the following RESTful endpoints:
+
+- `GET /api/contacts`: Fetch all contacts.
+- `POST /api/contacts`: Create a new contact.
+- `GET /api/contacts/{id}`: Fetch a single contact by ID.
+- `PUT /api/contacts/{id}`: Update a contact.
+- `DELETE /api/contacts/{id}`: Delete a contact.
